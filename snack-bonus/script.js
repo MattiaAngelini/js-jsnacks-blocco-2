@@ -4,11 +4,18 @@
 //Creo prompt per inserimento numero a 4 cifre
 const userNumber = prompt("Inserisci un numero a 4 cifre");
 
+//Creo una variabile somma con valore 0,
+//per poterla sommare ai numeri dell'indice
+let sum = 0;
+
 //creo ciclo for per stampare ogni singolo numero inserito.
 for(let i = 0; i < userNumber.length; i++) {
-    console.log(userNumber[i]);
+    //sommo variabile sum (valore zero) con i valori degli indici ricavati
+    //nel ciclo for (per farlo li converto da stringa a numero). 
+    sum += parseInt(userNumber[i]);
 } 
 
+console.log(sum)
 
 
 
